@@ -27,13 +27,13 @@ export function Default() {
     <Combobox.Root>
       <Field.Root xstyle={styles.fieldWidth}>
         <Field.Label>Fruit</Field.Label>
-        <InputGroup.Root>
+        <Combobox.InputGroup>
           <Combobox.Input placeholder='Search fruit…' />
           <InputGroup.End>
             <Combobox.Clear aria-label='Clear fruit' />
             <Combobox.Trigger aria-label='Toggle fruit options' />
           </InputGroup.End>
-        </InputGroup.Root>
+        </Combobox.InputGroup>
       </Field.Root>
       <Combobox.Popup>
         <Combobox.Collection
@@ -64,13 +64,13 @@ export function Scrolling() {
     <Combobox.Root>
       <Field.Root xstyle={styles.fieldWidth}>
         <Field.Label>Fruit</Field.Label>
-        <InputGroup.Root>
+        <Combobox.InputGroup>
           <Combobox.Input placeholder='Search fruit…' />
           <InputGroup.End>
             <Combobox.Clear aria-label='Clear fruit' />
             <Combobox.Trigger aria-label='Toggle fruit options' />
           </InputGroup.End>
-        </InputGroup.Root>
+        </Combobox.InputGroup>
       </Field.Root>
       <Combobox.Popup>
         <Combobox.Collection

@@ -31,6 +31,15 @@ import { Combobox } from '../../primitives/combobox';
 
 `value`, `defaultValue`, and `onValueChange` control the selected option. Clearing the input clears selection with `null`. `inputValue`, `defaultInputValue`, and `onInputValueChange` control search text separately.
 
+Wrap the input and its controls in `Combobox.InputGroup` to position the popup against the whole group. Pressing anywhere inside the group keeps the popup open. The popup anchors to the Positioner's `anchor` if given, then the `Combobox.InputGroup`, then the input.
+
+```tsx
+<Combobox.InputGroup>
+  <Combobox.Input aria-label='Fruit' />
+  <Combobox.Trigger aria-label='Show fruits' />
+</Combobox.InputGroup>
+```
+
 Dismissal restores the selected label. Reopening shows all options until typing starts. Hover and keyboard highlighting do not change selection.
 
 For search inside another popup, use `inline` with `List` and bind `open` to the outer popup. Closing clears search without clearing selection. Supply `defaultInputValue` when an initial selection's label differs from its value.

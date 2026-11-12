@@ -4,6 +4,7 @@ export {
   ComboboxCollection,
   ComboboxEmpty,
   ComboboxInput,
+  ComboboxInputGroup,
   ComboboxList,
   ComboboxOption,
   ComboboxOptionIndicator,
@@ -14,6 +15,7 @@ export {
 export type {
   ComboboxClearProps,
   ComboboxEmptyProps,
+  ComboboxInputGroupProps,
   ComboboxInputProps,
   ComboboxListProps,
   ComboboxOptionProps,
